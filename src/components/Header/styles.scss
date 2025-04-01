@@ -13,7 +13,14 @@
     padding: 0;
     height: auto;
     width: 4rem;
-    margin-right: 4rem;
+  }
+
+  .menu-n-title {
+    width: auto;
+    #name-product {
+      margin-left: 3rem;
+      font-size: 1.3rem;
+    }
   }
 
   .nav-closed {
@@ -26,7 +33,7 @@
     top: 10rem;
     left: 0;
     width: auto;
-    padding: 0 0 0 8vw;
+    padding: 0 0 0 0;
   }
 
   nav {
@@ -71,9 +78,22 @@
     letter-spacing: 0;
     align-self: center;
   }
+
+  .nav-btns {
+    display: flex;
+    gap: 2.5rem;
+    .login-btn {
+      padding-right: 0.5rem;
+    }
+    .primary-btn {
+      width: 7rem;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
 }
 
-// mobiles and tablets
+// tablets and desktop
 @media (min-width: 769px) {
   .customized-header {
     .menu-n-title {
@@ -81,10 +101,11 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 60vw;
-    }
 
-    .nav-btns .login-btn {
-      padding-right: 3rem;
+      #name-product {
+        font-size: 2.8rem;
+        margin-left: 0rem;
+      }
     }
 
     .nav-open {
@@ -129,6 +150,14 @@
         div {
           background-color: variables.$primary-color;
         }
+      }
+    }
+
+    .nav-btns {
+      .primary-btn {
+        width: 15rem;
+        font-size: 1.6rem;
+        padding: 1.8rem;
       }
     }
   }
