@@ -1,0 +1,135 @@
+@use "../../styles/variables" as variables;
+
+.customized-header {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding-top: 6rem;
+
+  .menu-btn {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 2.2rem;
+    padding: 0;
+    height: auto;
+    width: 4rem;
+    margin-right: 4rem;
+  }
+
+  .nav-closed {
+    display: none;
+  }
+
+  .nav-open {
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: auto;
+    padding: 0 0 0 8vw;
+  }
+
+  nav {
+    all: unset;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      text-align: left;
+      text-decoration: none;
+      color: variables.$font-primary-color;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: variables.$primary-color;
+      }
+    }
+  }
+
+  p {
+    align-content: center;
+    margin: 0;
+  }
+
+  button {
+    width: 8.5rem;
+    height: auto;
+    min-height: 2.9rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    align-self: center;
+  }
+}
+
+// mobiles and tablets
+@media (min-width: 769px) {
+  .customized-header {
+    .menu-n-title {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 60vw;
+    }
+
+    .nav-btns .login-btn {
+      padding-right: 3rem;
+    }
+
+    .nav-open {
+      display: flex;
+      position: unset;
+      width: auto;
+      padding: 0;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        li {
+          align-content: center;
+        }
+      }
+    }
+
+    .login-btn {
+      font-family: "Poppins";
+      background: transparent;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      letter-spacing: 0;
+      color: variables.$font-primary-color;
+      border-radius: 0;
+      width: auto;
+      height: auto;
+      padding: 0.4rem 0.5rem;
+      border-bottom: none;
+      div {
+        height: 0.2rem;
+        margin-top: 0.55rem;
+        width: 5.6rem;
+        background-color: variables.$font-primary-color;
+        border: none;
+      }
+      &:hover {
+        color: variables.$primary-color;
+        div {
+          background-color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}
