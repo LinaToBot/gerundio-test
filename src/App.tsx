@@ -1,5 +1,5 @@
 import Footer from "./components/Footer/Footer";
-import MainLayout from "./components/MainLayout/MainLayot";
+import MainLayout from "./components/MainLayout/MainLayout";
 import Header from "./components/Header/Header";
 import "./App.scss";
 

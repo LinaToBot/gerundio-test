@@ -1,4 +1,4 @@
-import img from "../../public/image.png";
+import img from "../../../public/image.png";
 import "./styles.scss";
 
 const ProductSection = () => {
