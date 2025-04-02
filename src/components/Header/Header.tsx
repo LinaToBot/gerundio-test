@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import "./styles.scss";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(
-    window.matchMedia("(min-width: 769px)").matches
-  );
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 769px)");
-
-    const handleResize = (event: MediaQueryListEvent) => {
-      setIsLargeScreen(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleResize);
-
-    return () => mediaQuery.removeEventListener("change", handleResize);
-  }, []);
+  const isLargeScreen = useMediaQuery("(min-width: 769px)");
 
   return (
     <header className="customized-header">

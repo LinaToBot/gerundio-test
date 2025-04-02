@@ -23,10 +23,6 @@ img {
   margin: 2rem 0;
 }
 
-#desktop-img {
-  display: none;
-}
-
 .paragraph {
   font-weight: 300;
   font-size: 1.8rem;
@@ -50,6 +46,7 @@ img {
   button {
     width: 25rem;
     padding: 2rem 0;
+    font-size: 2.4rem;
   }
 
   button:first-child {
@@ -119,10 +116,6 @@ img {
       color: variables.$primary-color;
     }
 
-    #mobile-img {
-      display: none;
-    }
-
     .paragraph {
       text-align: left;
       width: 50rem;
@@ -134,12 +127,12 @@ img {
       margin: 3rem 0;
 
       button {
-        width: 23rem;
+        width: auto;
+        padding: 2rem;
       }
     }
 
     #desktop-img {
-      display: unset;
       margin: 0;
       width: 50%;
       height: 48.9rem;
@@ -173,10 +166,6 @@ img {
       color: variables.$primary-color;
     }
 
-    #mobile-img {
-      display: none;
-    }
-
     .paragraph {
       text-align: left;
       width: 59rem;
@@ -186,10 +175,15 @@ img {
       flex-direction: row;
       align-items: start;
       margin: 3rem 0;
+
+      button {
+        width: auto;
+        padding: 2.4rem 2.7rem;
+        height: auto;
+      }
     }
 
     #desktop-img {
-      display: unset;
       margin: 0;
     }
 

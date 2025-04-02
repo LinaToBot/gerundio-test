@@ -1,7 +1,10 @@
+import useMediaQuery from "../../hooks/useMediaQuery";
 import img from "/image.png";
 import "./styles.scss";
 
 const ProductSection = () => {
+  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+
   return (
     <section className="sections">
       <div>
@@ -10,7 +13,11 @@ const ProductSection = () => {
           <p>Solutions for a Worry</p>
           <p>Free Life</p>
         </div>
-        <img src={img} alt="people" id="mobile-img" loading="lazy" />
+
+        {!isLargeScreen && (
+          <img src={img} alt="people" id="mobile-img" loading="lazy" />
+        )}
+
         <div id="content-product">
           <p className="paragraph">
             Stay protected with flexible coverage that safeguards your health,
@@ -23,7 +30,10 @@ const ProductSection = () => {
           </div>
         </div>
       </div>
-      <img src={img} alt="people" id="desktop-img" loading="lazy" />
+
+      {isLargeScreen && (
+        <img src={img} alt="people" id="desktop-img" loading="lazy" />
+      )}
     </section>
   );
 };
