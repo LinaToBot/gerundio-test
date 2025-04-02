@@ -1,0 +1,56 @@
+@use "../../styles/variables" as variables;
+
+.customized-footer {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-content: center;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    align-content: center;
+
+    &:nth-child(3) a {
+      width: 8rem;
+    }
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: variables.$font-primary-color;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: 0;
+
+    &:hover {
+      color: variables.$primary-color;
+    }
+  }
+
+  .divisor-line {
+    height: 0.1rem;
+    background-color: variables.$font-primary-color;
+    border: none;
+  }
+
+  p {
+    margin: 3rem 0 6rem 0;
+    color: variables.$font-primary-color;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+  }
+}

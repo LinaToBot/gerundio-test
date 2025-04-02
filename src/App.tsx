@@ -1,4 +1,5 @@
 import "./App.scss";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <Header />
       <main>Main</main>
-      <footer>Footer</footer>
+      <Footer />
     </>
   );
 }
