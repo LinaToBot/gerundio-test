@@ -1,4 +1,4 @@
-import img from "../../../public/image.png";
+import img from "/image.png";
 import "./styles.scss";
 
 const ProductSection = () => {
@@ -10,7 +10,7 @@ const ProductSection = () => {
           <p>Solutions for a Worry</p>
           <p>Free Life</p>
         </div>
-        <img src={img} alt="people" id="mobile-img" />
+        <img src={img} alt="people" id="mobile-img" loading="lazy" />
         <div id="content-product">
           <p className="paragraph">
             Stay protected with flexible coverage that safeguards your health,
@@ -23,7 +23,7 @@ const ProductSection = () => {
           </div>
         </div>
       </div>
-      <img src={img} alt="people" id="desktop-img" />
+      <img src={img} alt="people" id="desktop-img" loading="lazy" />
     </section>
   );
 };
