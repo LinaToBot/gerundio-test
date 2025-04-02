@@ -5,9 +5,7 @@ import ProductSection from "../ProductSection/ProductSection";
 const MainLayout = (): JSX.Element => {
   return (
     <main className="main-layout">
-      <section className="sections">
-        <ProductSection />
-      </section>
+      <ProductSection />
       <section className="sections"></section>
       <section className="sections"></section>
       <section className="sections"></section>
