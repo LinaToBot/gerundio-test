@@ -54,3 +54,29 @@
     letter-spacing: 0;
   }
 }
+
+// desktop
+@media (min-width: 1024px) {
+  .customized-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: center;
+    border-top: 0.1rem solid variables.$font-primary-color;
+
+    a {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    .divisor-line {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      align-self: center;
+    }
+  }
+}
