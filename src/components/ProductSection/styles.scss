@@ -1,0 +1,68 @@
+@use "../../styles/variables" as variables;
+
+.titles p {
+  font-weight: 600;
+  font-size: 3.7rem;
+  line-height: 5.55rem;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  color: variables.$font-primary-color;
+}
+
+.titles p:nth-child(3) {
+  color: variables.$primary-color;
+}
+
+img {
+  width: 100%;
+  border-radius: 2rem;
+  height: 42rem;
+  object-position: center;
+  object-fit: cover;
+  margin: 2rem 0;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  letter-spacing: 0;
+  color: variables.$font-primary-color;
+  margin: 0;
+}
+
+.product-btn {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 3rem;
+
+  button {
+    width: 25rem;
+    padding: 2rem 0;
+  }
+
+  button:first-child {
+    background-color: variables.$primary-color;
+    color: variables.$wildcard-color;
+
+    &:hover {
+      background-color: variables.$secondary-color;
+    }
+  }
+
+  button:nth-child(2) {
+    background-color: variables.$wildcard-color;
+    color: variables.$font-primary-color;
+    border: 0.2rem solid variables.$font-primary-color;
+
+    &:hover {
+      background-color: variables.$secondary-color;
+    }
+  }
+}
