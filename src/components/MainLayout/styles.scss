@@ -1,12 +1,10 @@
-@use "../../styles/variables" as variables;
-
 .main-layout {
   margin: 4rem 2rem;
   display: flex;
   flex-direction: column;
 
   .sections {
-    background-color: variables.$font-primary-color;
+    background-color: transparent;
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
