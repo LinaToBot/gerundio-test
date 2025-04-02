@@ -23,6 +23,10 @@ img {
   margin: 2rem 0;
 }
 
+#desktop-img {
+  display: none;
+}
+
 .paragraph {
   font-weight: 300;
   font-size: 1.8rem;
@@ -30,6 +34,7 @@ img {
   letter-spacing: 0;
   color: variables.$font-primary-color;
   margin: 0;
+  width: fit-content;
 }
 
 .product-btn {
@@ -63,6 +68,135 @@ img {
 
     &:hover {
       background-color: variables.$secondary-color;
+    }
+  }
+}
+
+// tablet styles
+@media (min-width: 768px) and (max-width: 1023px) {
+  #mobile-img {
+    width: 75%;
+  }
+
+  #content-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paragraph {
+    width: 75%;
+  }
+
+  .product-btn {
+    flex-direction: row;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 1rem 0 1rem;
+
+    div {
+      align-content: center;
+    }
+
+    .titles p {
+      font-size: 4.5rem;
+      line-height: 7.3rem;
+      letter-spacing: 0;
+      text-align: left;
+      margin: 0;
+      color: variables.$font-primary-color;
+    }
+
+    .titles p:nth-child(3) {
+      color: variables.$primary-color;
+    }
+
+    #mobile-img {
+      display: none;
+    }
+
+    .paragraph {
+      text-align: left;
+      width: 50rem;
+    }
+
+    .product-btn {
+      flex-direction: row;
+      align-items: start;
+      margin: 3rem 0;
+
+      button {
+        width: 23rem;
+      }
+    }
+
+    #desktop-img {
+      display: unset;
+      margin: 0;
+      width: 50%;
+      height: 48.9rem;
+      object-fit: cover;
+    }
+  }
+}
+
+// Desktop L
+@media (min-width: 1440px) {
+  .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 1rem 0 1rem;
+
+    div {
+      align-content: center;
+    }
+
+    .titles p {
+      font-size: 5.3rem;
+      line-height: 7.3rem;
+      letter-spacing: 0;
+      text-align: left;
+      margin: 0;
+      color: variables.$font-primary-color;
+    }
+
+    .titles p:nth-child(3) {
+      color: variables.$primary-color;
+    }
+
+    #mobile-img {
+      display: none;
+    }
+
+    .paragraph {
+      text-align: left;
+      width: 59rem;
+    }
+
+    .product-btn {
+      flex-direction: row;
+      align-items: start;
+      margin: 3rem 0;
+    }
+
+    #desktop-img {
+      display: unset;
+      margin: 0;
+    }
+
+    img {
+      order: 2;
+      width: 60rem;
+      height: 48.9rem;
+      object-fit: cover;
     }
   }
 }
