@@ -34,13 +34,15 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+// Desktop
+@media (min-width: 1024px) and (max-width: 1439.9px) {
   .card {
     max-width: 36.2rem;
   }
 }
 
-@media (min-width: 1441px) {
+// Desktop L
+@media (min-width: 1440px) {
   .card {
     max-width: 40rem;
   }
