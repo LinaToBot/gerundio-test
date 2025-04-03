@@ -1,7 +1,11 @@
+import MiscellanyFooter from "./MiscellanyFooter/MiscellanyFooter";
 import "./styles.scss";
 
 /**
  * Renders the Footer component.
+ *
+ * - Displays MiscellanyFooter from other component
+ *   to keep the code readable and maintainable.
  *
  * @component
  * @example
@@ -13,6 +17,7 @@ import "./styles.scss";
 const Footer: React.FC = () => {
   return (
     <footer className="customized-footer">
+      <MiscellanyFooter />
       <ul>
         <li>
           <a href="">Terms & Conditions</a>
