@@ -74,7 +74,7 @@
 }
 
 // Desktop
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439.9px) {
   #instructions-img {
     align-self: center;
     width: 50%;
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2rem 1rem 0 1rem;
+    padding: 8.3rem 1rem 0 1rem;
   }
 
   .desktop-paragraphs {
@@ -114,6 +114,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 8.3rem 1rem 0 1rem;
     // flex-wrap: wrap;
     // justify-content: center;
     // align-content: center;

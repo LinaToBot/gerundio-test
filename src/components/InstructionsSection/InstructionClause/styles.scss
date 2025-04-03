@@ -33,10 +33,18 @@ p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439.9px) {
   .list {
     width: 45rem;
   }
+  .paragraph-container {
+    p {
+      width: 35rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
   .paragraph-container {
     p {
       width: 45rem;
