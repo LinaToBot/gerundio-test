@@ -17,7 +17,7 @@ const CardInfo: React.FC<CardInfoProps> = ({
   imgHeight,
 }) => {
   return (
-    <div className="card">
+    <button className="card">
       <img
         src={imgPath}
         alt={`${benefit}-icon`}
@@ -27,7 +27,7 @@ const CardInfo: React.FC<CardInfoProps> = ({
       />
       <p>{benefit}</p>
       <p>{information}</p>
-    </div>
+    </button>
   );
 };
 
