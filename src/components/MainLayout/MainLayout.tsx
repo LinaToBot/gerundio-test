@@ -1,12 +1,13 @@
 import { JSX } from "react";
 import "./styles.scss";
 import ProductSection from "../ProductSection/ProductSection";
+import BenefitsSection from "../BenefitsSection/BenefitsSection";
 
-const MainLayout = (): JSX.Element => {
+const MainLayout: React.FC = (): JSX.Element => {
   return (
     <main className="main-layout">
       <ProductSection />
-      <section className="sections"></section>
+      <BenefitsSection />
       <section className="sections"></section>
       <section className="sections"></section>
     </main>
