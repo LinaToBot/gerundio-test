@@ -33,3 +33,15 @@
       -5px 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .card {
+    max-width: 36.2rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  .card {
+    max-width: 40rem;
+  }
+}

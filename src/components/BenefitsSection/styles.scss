@@ -25,3 +25,98 @@
   flex-direction: column;
   gap: 2.8rem;
 }
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p:nth-child(3) {
+      width: 54.6rem;
+    }
+  }
+  .layout-cards {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 54.6rem;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .benefits-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+
+    p {
+      text-align: left;
+    }
+
+    p:first-child,
+    p:nth-child(2) {
+      font-size: 3.8rem;
+      line-height: 5.7rem;
+    }
+  }
+
+  .layout-cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+    gap: 2vw;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .benefits-section {
+    padding: 0 2%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .texts {
+    margin: 3.7rem 1.5% 3.5rem 1.5%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 2559px) {
+  .benefits-section {
+    padding: 0 3%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1739px) {
+  .texts {
+    margin: 3.7rem 3% 3.5rem 3%;
+  }
+}
+
+@media (min-width: 1740px) and (max-width: 2559px) {
+  .texts {
+    margin: 3.7rem 6% 3.5rem 6%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .benefits-section {
+    padding: 0 8%;
+  }
+
+  .texts {
+    margin: 3.7rem 6.5% 3.5rem 6.5%;
+  }
+}

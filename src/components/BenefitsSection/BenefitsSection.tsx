@@ -1,3 +1,4 @@
+import useMediaQuery from "../../hooks/useMediaQuery";
 import CardInfo from "../CardInfo/CardInfo";
 import plansIcon from "../../assets/plans.svg";
 import supportIcon from "../../assets/support.svg";
@@ -8,15 +9,25 @@ import premiumIcon from "../../assets/premium.svg";
 import "./styles.scss";
 
 const BenefitsSection: React.FC = () => {
+  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+
   return (
-    <section className="sections">
+    <section className="sections benefits-section">
       <div className="texts">
         <p>Why Thousands Trust Us </p>
         <p>for Their Insurance Needs</p>
-        <p>
-          Reliable, affordable, and hassle-free insurance solutions tailored for
-          you.
-        </p>
+        {!isLargeScreen ? (
+          <p>
+            Reliable, affordable, and hassle-free insurance solutions tailored
+            for you.
+          </p>
+        ) : (
+          <p>
+            Reliable, affordable, and hassle-free insurance solutions tailored{" "}
+            <br />
+            for you. With 24/7 support and quick claims processing.
+          </p>
+        )}
       </div>
       <div className="layout-cards">
         <CardInfo
