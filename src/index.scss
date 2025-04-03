@@ -68,6 +68,10 @@ button {
   }
 }
 
+p {
+  color: variables.$font-primary-color;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
