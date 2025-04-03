@@ -91,7 +91,7 @@
 
 // Desktop
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .sections {
+  .product-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -140,7 +140,7 @@
 
 // Desktop L
 @media (min-width: 1440px) {
-  .sections {
+  .product-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -6,7 +6,7 @@ const ProductSection: React.FC = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section className="sections">
+    <section className="sections product-section">
       <div>
         <div className="titles">
           <p>Smart Insurance</p>
