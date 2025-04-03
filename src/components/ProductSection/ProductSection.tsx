@@ -2,6 +2,18 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import img from "/image.png";
 import "./styles.scss";
 
+/**
+ * Renders the Product Section.
+ *
+ * - Uses media queries to show/hide elements based on screen size.
+ *
+ * @component
+ * @example
+ * return <ProductSection />
+ *
+ * @returns {JSX.Element} The ProductSection component.
+ */
+
 const ProductSection: React.FC = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 

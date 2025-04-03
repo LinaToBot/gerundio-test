@@ -1,5 +1,15 @@
 import "./styles.scss";
 
+/**
+ * Renders the Footer component.
+ *
+ * @component
+ * @example
+ * return <Footer />
+ *
+ * @returns {React.FC} The Footer component.
+ */
+
 const Footer: React.FC = () => {
   return (
     <footer className="customized-footer">

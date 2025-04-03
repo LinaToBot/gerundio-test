@@ -8,6 +8,18 @@ import coverageIcon from "../../assets/coverage.svg";
 import premiumIcon from "../../assets/premium.svg";
 import "./styles.scss";
 
+/**
+ * Renders the Benefits Section with CardInfo components.
+ *
+ * - Uses media queries to show/hide elements based on screen size.
+ *
+ * @component
+ * @example
+ * return <BenefitsSection />
+ *
+ * @returns {React.FC} The BenefitsSection component.
+ */
+
 const BenefitsSection: React.FC = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 

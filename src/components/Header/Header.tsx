@@ -2,6 +2,20 @@ import { useState } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import "./styles.scss";
 
+/**
+ * Renders the Header component.
+ *
+ * - Displays a navigation menu.
+ * - Uses media queries to show/hide elements based on screen size.
+ * - Shows a hamburger menu on smaller screens.
+ *
+ * @component
+ * @example
+ * return <Header />
+ *
+ * @returns {JSX.Element} The Header component.
+ */
+
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isLargeScreen = useMediaQuery("(min-width: 769px)");
