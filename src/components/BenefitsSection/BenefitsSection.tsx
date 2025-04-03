@@ -10,12 +10,15 @@ import "./styles.scss";
 const BenefitsSection: React.FC = () => {
   return (
     <section className="sections">
-      <div>
+      <div className="texts">
         <p>Why Thousands Trust Us </p>
         <p>for Their Insurance Needs</p>
-        <p>for Their Insurance Needs</p>
+        <p>
+          Reliable, affordable, and hassle-free insurance solutions tailored for
+          you.
+        </p>
       </div>
-      <div>
+      <div className="layout-cards">
         <CardInfo
           imgPath={plansIcon}
           benefit="Custom Plans Available"

@@ -1,0 +1,27 @@
+.texts {
+  margin: 3.7rem 0 3.5rem 0;
+
+  p {
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  p:first-child,
+  p:nth-child(2) {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+  }
+
+  p:nth-child(3) {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+.layout-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
