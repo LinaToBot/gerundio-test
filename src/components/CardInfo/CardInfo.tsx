@@ -13,7 +13,7 @@ const CardInfo: React.FC<CardInfoProps> = ({
   cssClass,
 }) => {
   return (
-    <div>
+    <div className="card">
       <img src={imgPath} alt={`${benefit}-icon`} className={cssClass} />
       <p>{benefit}</p>
       <p>{information}</p>

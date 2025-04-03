@@ -1,0 +1,28 @@
+@use "../../styles/constants" as constant;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: constant.$card-bg-color;
+  border: 0.2rem solid constant.$border-color;
+  border-radius: 1rem;
+  padding: 3.6rem 3.2rem;
+
+  p {
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  p:nth-child(2) {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    color: constant.$primary-color;
+  }
+
+  p:nth-child(3) {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
