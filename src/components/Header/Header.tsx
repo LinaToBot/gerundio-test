@@ -2,7 +2,7 @@ import { useState } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import "./styles.scss";
 
-const Header = () => {
+const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isLargeScreen = useMediaQuery("(min-width: 769px)");
 

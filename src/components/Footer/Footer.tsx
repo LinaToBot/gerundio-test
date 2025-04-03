@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="customized-footer">
       <ul>

@@ -2,7 +2,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import img from "/image.png";
 import "./styles.scss";
 
-const ProductSection = () => {
+const ProductSection: React.FC = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 
   return (
