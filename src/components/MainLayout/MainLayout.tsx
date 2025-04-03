@@ -19,8 +19,6 @@ const MainLayout: React.FC = () => {
       <ProductSection />
       <BenefitsSection />
       <InstructionsSection />
-      <section className="sections"></section>
-      <section className="sections"></section>
     </main>
   );
 };
