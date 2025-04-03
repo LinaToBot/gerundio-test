@@ -1,7 +1,7 @@
-import { JSX } from "react";
-import "./styles.scss";
 import ProductSection from "../ProductSection/ProductSection";
 import BenefitsSection from "../BenefitsSection/BenefitsSection";
+import InstructionsSection from "../InstructionsSection/InstructionsSection";
+import "./styles.scss";
 
 /**
  * Renders the Main Layout component with responsive behavior.
@@ -13,11 +13,12 @@ import BenefitsSection from "../BenefitsSection/BenefitsSection";
  * @returns {JSX.Element} The MainLayout component.
  */
 
-const MainLayout: React.FC = (): JSX.Element => {
+const MainLayout: React.FC = () => {
   return (
     <main className="main-layout">
       <ProductSection />
       <BenefitsSection />
+      <InstructionsSection />
       <section className="sections"></section>
       <section className="sections"></section>
     </main>
