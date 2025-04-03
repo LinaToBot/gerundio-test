@@ -1,4 +1,4 @@
-@use "../../styles/variables" as variables;
+@use "../../styles/constants" as constants;
 
 .customized-header {
   display: flex;
@@ -57,7 +57,7 @@
       font-size: 1.6rem;
 
       &:hover {
-        color: variables.$primary-color;
+        color: constants.$primary-color;
       }
     }
   }
@@ -131,7 +131,7 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       letter-spacing: 0;
-      color: variables.$font-primary-color;
+      color: constants.$font-primary-color;
       border-radius: 0;
       width: auto;
       height: auto;
@@ -141,13 +141,13 @@
         height: 0.2rem;
         margin-top: 0.55rem;
         width: 5.6rem;
-        background-color: variables.$font-primary-color;
+        background-color: constants.$font-primary-color;
         border: none;
       }
       &:hover {
-        color: variables.$primary-color;
+        color: constants.$primary-color;
         div {
-          background-color: variables.$primary-color;
+          background-color: constants.$primary-color;
         }
       }
     }

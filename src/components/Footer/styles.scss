@@ -1,4 +1,4 @@
-@use "../../styles/variables" as variables;
+@use "../../styles/constants" as constants;
 
 .customized-footer {
   ul {
@@ -34,13 +34,13 @@
     letter-spacing: 0;
 
     &:hover {
-      color: variables.$primary-color;
+      color: constants.$primary-color;
     }
   }
 
   .divisor-line {
     height: 0.1rem;
-    background-color: variables.$font-primary-color;
+    background-color: constants.$font-primary-color;
     border: none;
   }
 
@@ -60,7 +60,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-content: center;
-    border-top: 0.1rem solid variables.$font-primary-color;
+    border-top: 0.1rem solid constants.$font-primary-color;
 
     a {
       font-size: 2rem;

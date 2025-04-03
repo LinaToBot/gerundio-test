@@ -1,4 +1,4 @@
-@use "../../styles/variables" as variables;
+@use "../../styles/constants" as constants;
 
 .titles p {
   font-weight: 600;
@@ -10,7 +10,7 @@
 }
 
 .titles p:nth-child(3) {
-  color: variables.$primary-color;
+  color: constants.$primary-color;
 }
 
 #mobile-img {
@@ -48,22 +48,22 @@
   }
 
   button:first-child {
-    background-color: variables.$primary-color;
-    color: variables.$wildcard-color;
+    background-color: constants.$primary-color;
+    color: constants.$wildcard-color;
 
     &:hover {
-      background-color: variables.$secondary-color;
+      background-color: constants.$secondary-color;
     }
   }
 
   button:nth-child(2) {
-    background-color: variables.$wildcard-color;
-    color: variables.$font-primary-color;
-    border: 0.2rem solid variables.$font-primary-color;
+    background-color: constants.$wildcard-color;
+    color: constants.$font-primary-color;
+    border: 0.2rem solid constants.$font-primary-color;
 
     &:hover {
-      color: variables.$primary-color;
-      border: 0.2rem solid variables.$primary-color;
+      color: constants.$primary-color;
+      border: 0.2rem solid constants.$primary-color;
     }
   }
 }
@@ -110,7 +110,7 @@
     }
 
     .titles p:nth-child(3) {
-      color: variables.$primary-color;
+      color: constants.$primary-color;
     }
 
     .paragraph {
@@ -159,7 +159,7 @@
     }
 
     .titles p:nth-child(3) {
-      color: variables.$primary-color;
+      color: constants.$primary-color;
     }
 
     .paragraph {

@@ -1,17 +1,17 @@
-@use "./styles/variables" as variables;
+@use "./styles/constants" as constants;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 html {
   font-size: 10px;
 
   :root {
-    font-family: variables.$font-primary-family;
+    font-family: constants.$font-primary-family;
     line-height: 1.5;
     font-weight: 400;
 
     color-scheme: light dark;
-    color: variables.$font-primary-color;
-    background-color: variables.$wildcard-color;
+    color: constants.$font-primary-color;
+    background-color: constants.$wildcard-color;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: variables.$font-primary-family;
+  font-family: constants.$font-primary-family;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -43,14 +43,14 @@ body {
   line-height: 2.4rem;
   letter-spacing: 0;
   text-align: center;
-  color: variables.$primary-color;
+  color: constants.$primary-color;
 }
 
 .primary-btn {
-  background-color: variables.$primary-color;
-  color: variables.$wildcard-color;
+  background-color: constants.$primary-color;
+  color: constants.$wildcard-color;
   &:hover {
-    background-color: variables.$secondary-color;
+    background-color: constants.$secondary-color;
   }
 }
 
@@ -70,7 +70,7 @@ button {
 
 p,
 a {
-  color: variables.$font-primary-color;
+  color: constants.$font-primary-color;
 }
 
 /* @media (prefers-color-scheme: light) {
