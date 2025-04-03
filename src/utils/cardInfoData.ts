@@ -1,9 +1,9 @@
-import plansIcon from "../../assets/plans.svg";
-import supportIcon from "../../assets/support.svg";
-import quickIcon from "../../assets/quick.svg";
-import secureIcon from "../../assets/secure.svg";
-import coverageIcon from "../../assets/coverage.svg";
-import premiumIcon from "../../assets/premium.svg";
+import plansIcon from "../assets/plans.svg";
+import supportIcon from "../assets/support.svg";
+import quickIcon from "../assets/quick.svg";
+import secureIcon from "../assets/secure.svg";
+import coverageIcon from "../assets/coverage.svg";
+import premiumIcon from "../assets/premium.svg";
 
 export const cardInfoData = [
   {
