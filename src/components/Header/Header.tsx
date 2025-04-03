@@ -57,6 +57,7 @@ const Header: React.FC = () => {
         {isLargeScreen && (
           <button onClick={() => {}} className="login-btn">
             Login
+            <div></div>
           </button>
         )}
         <button className="primary-btn">Get Started</button>
