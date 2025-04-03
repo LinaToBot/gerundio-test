@@ -1,12 +1,12 @@
 import "./styles.scss";
-type CardInfoProps = {
+interface CardInfoProps {
   imgPath: string;
   information: string;
   benefit: string;
   cssClass?: string;
   imgWidth?: string;
   imgHeight?: string;
-};
+}
 
 /**
  * Renders a card (button) with customizable texts, images and its styles.
