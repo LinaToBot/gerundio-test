@@ -29,3 +29,9 @@
   height: 51.4rem;
   margin: 2.4rem 0 3.9rem 0;
 }
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
