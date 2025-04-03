@@ -11,7 +11,7 @@ import "./styles.scss";
  * @example
  * return <ProductSection />
  *
- * @returns {JSX.Element} The ProductSection component.
+ * @returns {React.FC} The ProductSection component.
  */
 
 const ProductSection: React.FC = () => {

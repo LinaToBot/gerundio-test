@@ -10,7 +10,7 @@ import "./styles.scss";
  * @example
  * return <MainLayout />
  *
- * @returns {JSX.Element} The MainLayout component.
+ * @returns { React.FC} The MainLayout component.
  */
 
 const MainLayout: React.FC = () => {

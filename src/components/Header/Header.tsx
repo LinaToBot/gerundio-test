@@ -13,7 +13,7 @@ import "./styles.scss";
  * @example
  * return <Header />
  *
- * @returns {JSX.Element} The Header component.
+ * @returns { React.FC} The Header component.
  */
 
 const Header: React.FC = () => {
