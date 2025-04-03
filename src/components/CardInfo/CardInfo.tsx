@@ -4,6 +4,8 @@ type CardInfoProps = {
   information: string;
   benefit: string;
   cssClass?: string;
+  imgWidth?: string;
+  imgHeight?: string;
 };
 
 const CardInfo: React.FC<CardInfoProps> = ({
@@ -11,10 +13,18 @@ const CardInfo: React.FC<CardInfoProps> = ({
   information,
   benefit,
   cssClass,
+  imgWidth,
+  imgHeight,
 }) => {
   return (
     <div className="card">
-      <img src={imgPath} alt={`${benefit}-icon`} className={cssClass} />
+      <img
+        src={imgPath}
+        alt={`${benefit}-icon`}
+        className={cssClass}
+        width={imgWidth}
+        height={imgHeight}
+      />
       <p>{benefit}</p>
       <p>{information}</p>
     </div>
