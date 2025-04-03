@@ -1,0 +1,31 @@
+@use "../../styles/constants" as constants;
+
+.mobile-paragraphs {
+  p {
+    letter-spacing: 0;
+  }
+
+  p:first-child {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    margin: 5.2rem 0 0 0;
+  }
+
+  p:nth-child(2) {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin: 0;
+  }
+}
+
+#instructions-img {
+  width: 100%;
+  border-radius: 2rem;
+  height: 42rem;
+  object-position: center;
+  object-fit: cover;
+  height: 51.4rem;
+  margin: 2.4rem 0 3.9rem 0;
+}
