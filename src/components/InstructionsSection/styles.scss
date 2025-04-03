@@ -23,7 +23,6 @@
 #instructions-img {
   width: 100%;
   height: 51.4rem;
-  height: 42rem;
   border-radius: 2rem;
   object-position: center;
   object-fit: cover;
@@ -36,44 +35,92 @@
   gap: 2.4rem;
 }
 
-// .desktop-paragraphs {
-//   p {
-//     letter-spacing: 0;
-//   }
+.desktop-paragraphs {
+  p {
+    letter-spacing: 0;
+  }
 
-//   p:first-child {
-//     font-weight: 600;
-//     font-size: 3.8rem;
-//     line-height: 5.7rem;
-//     margin: 0;
-//   }
+  p:first-child {
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 5.7rem;
+    margin: 0;
+  }
 
-//   p:nth-child(2) {
-//     font-weight: 300;
-//     font-size: 1.8rem;
-//     line-height: 2.7rem;
-//     margin: 0;
-//   }
-// }
+  p:nth-child(2) {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin: 0;
+  }
+}
 
-// // tablets
-// @media (min-width: 1024px) {
-//   #instructions-img {
-//     width: 47.88rem;
-//   }
-// }
+// tablets
+@media (min-width: 768px) and (max-width: 1023.9px) {
+  #instructions-img {
+    width: 54.6rem;
+  }
 
-// @media (min-width: 1024px) {
-//   #instructions-img {
-//     width: 60rem;
-//     border-radius: 2rem;
-//     height: 78.8rem;
-//     object-position: center;
-//     object-fit: cover;
-//     margin: 0;
-//   }
-//   .instructions-sections {
-//     display: flex;
-//     justify-content: row;
-//   }
-// }
+  .instructions {
+    width: 54.6rem;
+  }
+  .instructions-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #instructions-img {
+    align-self: center;
+    width: 50%;
+    height: 78.8rem;
+    margin: 0;
+  }
+
+  .instructions {
+    flex-wrap: wrap;
+    align-content: end;
+  }
+
+  .instructions-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .desktop-paragraphs {
+    width: 45rem;
+    text-align: left;
+  }
+}
+
+// Desktop L
+@media (min-width: 1440px) {
+  #instructions-img {
+    width: 60rem;
+    height: 78.8rem;
+    margin: 0;
+  }
+  .instructions {
+    width: 61.7rem;
+  }
+  .instructions-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-content: center;
+    // gap: 7rem;
+  }
+
+  .desktop-paragraphs {
+    text-align: left;
+  }
+}

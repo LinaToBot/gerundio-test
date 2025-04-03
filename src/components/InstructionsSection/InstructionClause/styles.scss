@@ -32,3 +32,14 @@ p {
     text-align: left;
   }
 }
+
+@media (min-width: 1024px) {
+  .list {
+    width: 45rem;
+  }
+  .paragraph-container {
+    p {
+      width: 45rem;
+    }
+  }
+}

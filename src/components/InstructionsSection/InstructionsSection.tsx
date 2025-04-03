@@ -18,7 +18,7 @@ const InstructionsSection: React.FC = () => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section className="sections instructions-sections">
+    <section className="sections instructions-section">
       {!isLargeScreen && (
         <div className="mobile-paragraphs">
           <p>Getting Insured Is Simple & Fast</p>
