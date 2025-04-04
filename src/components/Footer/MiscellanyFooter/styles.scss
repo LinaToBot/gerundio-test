@@ -172,11 +172,134 @@
   }
 }
 
-@media (min-width: 1024px) {
+// Desktop
+@media (min-width: 1024px) and (max-width: 1439.9px) {
   .miscellany-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0rem 1rem;
+    margin-top: 7.8rem;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    p:first-child {
+      width: 100%;
+      margin: 0 0 2.3rem 0;
+    }
+
+    p:nth-child(2) {
+      margin: 0 0 5.7rem 0;
+      width: 34.6rem;
+    }
+
+    p:first-child,
+    p:nth-child(2) {
+      text-align: start;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 1.7rem;
+      width: 32rem;
+      margin: 0;
+
+      div {
+        gap: 3rem;
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          letter-spacing: 0;
+        }
+      }
+
+      #phone p,
+      #email p {
+        width: fit-content;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    #links-p {
+      text-align: start;
+    }
+
+    .links-list {
+      width: 15rem;
+      height: auto;
+      gap: 2rem;
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4.5rem 0 0 0;
+
+      a {
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        letter-spacing: 0;
+      }
+
+      .first-list {
+        gap: 7.3rem;
+      }
+
+      .second-list {
+        gap: 5rem;
+      }
+
+      .first-list,
+      .second-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+
+  .newsletter {
+    #newsletter-title {
+      width: 100%;
+    }
+
+    #newsletter-title,
+    #newsletter-p {
+      text-align: start;
+    }
+
+    .social-media {
+      justify-content: start;
+    }
+  }
+}
+
+// Desktop L
+@media (min-width: 1440px) {
+  .miscellany-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem 1rem;
+    margin-top: 7.8rem;
   }
 
   .information {
@@ -262,6 +385,7 @@
       .first-list,
       .second-list {
         display: flex;
+        align-items: start;
         flex-direction: row;
       }
     }
