@@ -46,12 +46,13 @@
 }
 
 // Desktop
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .benefits-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    padding: 0 1rem;
   }
 
   .texts {
@@ -76,47 +77,11 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
-    gap: 2vw;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1400px) {
-  .benefits-section {
-    padding: 0 2%;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .texts {
-    margin: 3.7rem 1.5% 3.5rem 1.5%;
-  }
-}
-
-@media (min-width: 1400px) and (max-width: 2559px) {
-  .benefits-section {
-    padding: 0 3%;
-  }
-}
-
-@media (min-width: 1400px) and (max-width: 1739px) {
-  .texts {
-    margin: 3.7rem 3% 3.5rem 3%;
-  }
-}
-
-@media (min-width: 1740px) and (max-width: 2559px) {
-  .texts {
-    margin: 3.7rem 6% 3.5rem 6%;
-  }
-}
-
-@media (min-width: 2560px) {
-  .benefits-section {
-    padding: 0 8%;
-  }
-
-  .texts {
-    margin: 3.7rem 6.5% 3.5rem 6.5%;
+    align-content: center;
+    gap: 2.8rem;
+    width: 95%;
+    .full-width {
+      grid-column: span 3;
+    }
   }
 }
