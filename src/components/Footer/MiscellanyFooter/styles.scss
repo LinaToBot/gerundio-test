@@ -414,10 +414,10 @@
   .miscellany-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0rem 0rem;
     margin-top: 7.8rem;
-    width: 90%;
+    width: 100%;
   }
 
   .information {

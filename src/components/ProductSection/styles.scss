@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 0 0 0;
 
     div {
       align-content: center;
@@ -131,7 +131,7 @@
 
     #desktop-img {
       margin: 0;
-      width: 50%;
+      width: 40%;
       height: 48.9rem;
       object-fit: cover;
     }
