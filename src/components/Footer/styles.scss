@@ -84,3 +84,37 @@
     }
   }
 }
+
+// Desktop max 4k
+@media (min-width: 1441px) {
+  .customized-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .second-part {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-content: center;
+      border-top: 0.1rem solid constants.$font-primary-color;
+    }
+
+    a {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    .divisor-line {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      align-self: center;
+    }
+  }
+}

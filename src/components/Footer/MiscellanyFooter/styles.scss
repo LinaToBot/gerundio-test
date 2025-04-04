@@ -298,8 +298,126 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
     margin-top: 7.8rem;
+    // width: 142rem;
+    // width: 95%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    p:first-child {
+      width: 100%;
+      margin: 0 0 2.3rem 0;
+    }
+
+    p:nth-child(2) {
+      margin: 0 0 5.7rem 0;
+      width: 34.6rem;
+    }
+
+    p:first-child,
+    p:nth-child(2) {
+      text-align: start;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 1.7rem;
+      width: 32rem;
+      margin: 0;
+
+      div {
+        gap: 3rem;
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          letter-spacing: 0;
+        }
+      }
+
+      #phone p,
+      #email p {
+        width: fit-content;
+      }
+    }
+  }
+
+  .links {
+    #links-p {
+      text-align: start;
+    }
+
+    .links-list {
+      width: 42rem;
+      height: auto;
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 4.5rem 0 0 0;
+
+      a {
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        letter-spacing: 0;
+      }
+
+      .first-list {
+        gap: 7.3rem;
+      }
+
+      .second-list {
+        gap: 5rem;
+      }
+
+      .first-list,
+      .second-list {
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .newsletter {
+    #newsletter-title {
+      width: 100%;
+    }
+
+    #newsletter-title,
+    #newsletter-p {
+      text-align: start;
+    }
+
+    .social-media {
+      justify-content: start;
+    }
+  }
+}
+
+// Desktop max 4k
+@media (min-width: 1441px) {
+  .miscellany-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem 0rem;
+    margin-top: 7.8rem;
+    width: 90%;
   }
 
   .information {
