@@ -95,3 +95,8 @@ The project will now be running on:
 👉 http://localhost:5173
 
 You can open that URL in your browser to see the app.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0.  
+See the [LICENSE](./LICENSE) file for more information.
