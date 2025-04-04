@@ -18,7 +18,7 @@ import "./styles.scss";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isLargeScreen = useMediaQuery("(min-width: 769px)");
+  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 
   return (
     <header className="customized-header">

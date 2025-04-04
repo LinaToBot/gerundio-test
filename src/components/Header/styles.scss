@@ -92,8 +92,8 @@
   }
 }
 
-// Tablet and Desktop
-@media (min-width: 769px) {
+// Desktop
+@media (min-width: 1024px) {
   .customized-header {
     .menu-n-title {
       display: flex;
