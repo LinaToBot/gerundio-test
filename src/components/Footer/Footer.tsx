@@ -18,19 +18,21 @@ const Footer: React.FC = () => {
   return (
     <footer className="customized-footer">
       <MiscellanyFooter />
-      <ul>
-        <li>
-          <a href="">Terms & Conditions</a>
-        </li>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="">Licensing</a>
-        </li>
-      </ul>
-      <div className="divisor-line"></div>
-      <p>© 2025 Shield Plus. All Rights Reserved.</p>
+      <div className="second-part">
+        <ul>
+          <li>
+            <a href="">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="">Licensing</a>
+          </li>
+        </ul>
+        <div className="divisor-line"></div>
+        <p>© 2025 Shield Plus. All Rights Reserved.</p>
+      </div>
     </footer>
   );
 };

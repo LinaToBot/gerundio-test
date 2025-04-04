@@ -32,11 +32,12 @@ const MiscellanyFooter: React.FC = () => {
         </p>
         {isLargeScreen && (
           <div className="contact">
-            <div>
-              <img /> <p>+(123) 456-7890</p>
+            <div id="phone">
+              <img src={phoneIcon} alt="phone icon" /> <p>+(123) 456-7890</p>
             </div>
-            <div>
-              <img /> <p>support@Shield Plus.com</p>
+            <div id="email">
+              <img src={emailIcon} alt="email icon" />
+              <p>support@Shield Plus.com</p>
             </div>
           </div>
         )}
@@ -44,10 +45,14 @@ const MiscellanyFooter: React.FC = () => {
       <div className="links">
         <p id="links-p">Quick Links</p>
         <div className="links-list">
-          <a>Insurance Plans</a>
-          <a>Customer Support</a>
-          <a>Claims Assistance</a>
-          <a>About Us</a>
+          <div className="first-list">
+            <a>Insurance Plans</a>
+            <a>Customer Support</a>
+          </div>
+          <div className="second-list">
+            <a>Claims Assistance</a>
+            <a>About Us</a>
+          </div>
         </div>
       </div>
       <div className="newsletter">

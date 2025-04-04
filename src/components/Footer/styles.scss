@@ -57,10 +57,16 @@
 @media (min-width: 1024px) {
   .customized-footer {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
-    align-content: center;
-    border-top: 0.1rem solid constants.$font-primary-color;
+
+    .second-part {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-content: center;
+      border-top: 0.1rem solid constants.$font-primary-color;
+    }
 
     a {
       font-size: 2rem;
