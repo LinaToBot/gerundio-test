@@ -1,22 +1,18 @@
+@use "../../utils/constants" as constants;
 .texts {
   margin: 3.7rem 0 3.5rem 0;
 
   p {
-    letter-spacing: 0;
     margin: 0;
   }
 
   p:first-child,
   p:nth-child(2) {
-    font-weight: 600;
-    font-size: 2.8rem;
-    line-height: 4.2rem;
+    @include constants.title-styles(600, 2.8rem, 4.2rem);
   }
 
   p:nth-child(3) {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    @include constants.title-styles(300, 1.8rem, 2.7rem);
   }
 }
 
@@ -29,8 +25,7 @@
 // Tablet
 @media (min-width: 768px) and (max-width: 1023px) {
   .texts {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     align-items: center;
 
     p:nth-child(3) {
@@ -38,8 +33,7 @@
     }
   }
   .layout-cards {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     justify-self: center;
     width: 54.6rem;
   }
@@ -48,15 +42,13 @@
 // Desktop
 @media (min-width: 1024px) {
   .benefits-section {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     flex-wrap: wrap;
     align-content: center;
   }
 
   .texts {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     flex-wrap: wrap;
     align-content: start;
 
@@ -72,10 +64,9 @@
   }
 
   .layout-cards {
-    display: grid;
+    @include constants.container-styles(grid, unset, space-evenly, unset);
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    justify-content: space-evenly;
     align-content: center;
     gap: 2.8rem;
     width: 95%;

@@ -1,10 +1,7 @@
 @use "../../utils/constants" as constants;
 
 .titles p {
-  font-weight: 600;
-  font-size: 3.7rem;
-  line-height: 5.55rem;
-  letter-spacing: 0;
+  @include constants.title-styles(600, 3.7rem, 5.55rem);
   text-align: center;
   margin: 0;
 }
@@ -15,28 +12,23 @@
 
 #mobile-img {
   width: 100%;
-  border-radius: 2rem;
   height: 42rem;
+  border-radius: 2rem;
   object-position: center;
   object-fit: cover;
   margin: 2rem 0;
 }
 
 .paragraph {
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  letter-spacing: 0;
+  @include constants.title-styles(300, 1.8rem, 2.7rem);
   margin: 0;
   width: fit-content;
 }
 
 .product-btn {
+  @include constants.title-styles(600, 2.4rem, 3.6rem);
   display: flex;
   flex-direction: column;
-  font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
   gap: 2.5rem;
   align-items: center;
   margin: 3rem;
@@ -48,8 +40,10 @@
   }
 
   button:first-child {
-    background-color: constants.$primary-color;
-    color: constants.$wildcard-color;
+    @include constants.button-styles(
+      constants.$primary-color,
+      constants.$wildcard-color
+    );
 
     &:hover {
       background-color: constants.$secondary-color;
@@ -57,8 +51,10 @@
   }
 
   button:nth-child(2) {
-    background-color: constants.$wildcard-color;
-    color: constants.$font-primary-color;
+    @include constants.button-styles(
+      constants.$wildcard-color,
+      constants.$font-primary-color
+    );
     border: 0.2rem solid constants.$font-primary-color;
 
     &:hover {
@@ -102,9 +98,7 @@
     }
 
     .titles p {
-      font-size: 4.5rem;
-      line-height: 7.3rem;
-      letter-spacing: 0;
+      @include constants.title-styles(600, 4.5rem, 7.3rem);
       text-align: left;
       margin: 0;
     }
@@ -114,8 +108,7 @@
     }
 
     .paragraph {
-      text-align: left;
-      width: 50rem;
+      @include constants.p-styles(left, 50rem);
     }
 
     .product-btn {
@@ -151,9 +144,7 @@
     }
 
     .titles p {
-      font-size: 5.3rem;
-      line-height: 7.3rem;
-      letter-spacing: 0;
+      @include constants.title-styles(600, 5.3rem, 7.3rem);
       text-align: left;
       margin: 0;
     }
@@ -163,8 +154,7 @@
     }
 
     .paragraph {
-      text-align: left;
-      width: 59rem;
+      @include constants.p-styles(left, 59rem);
     }
 
     .product-btn {

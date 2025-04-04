@@ -1,24 +1,15 @@
 @use "../../utils/constants" as constants;
 
 .customized-footer {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 3rem 1.6rem;
+  .second-part .legal-info {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 2rem;
-    align-content: center;
-  }
+    gap: 2.6rem;
+    flex-direction: row;
+    margin: 0 0 2.8rem 0;
 
-  li {
-    padding: 0;
-    margin: 0;
-    align-content: center;
-
-    &:nth-child(3) a {
-      width: 8rem;
+    a:nth-child(3) {
+      margin: 0 1rem 0 0;
     }
   }
 
@@ -28,10 +19,7 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-    letter-spacing: 0;
+    @include constants.title-styles(500, 1.6rem, 2.4rem);
 
     &:hover {
       color: constants.$primary-color;
@@ -46,26 +34,35 @@
 
   p {
     margin: 3rem 0 6rem 0;
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0;
+    @include constants.title-styles(500, 2rem, 3rem);
   }
 }
 
 // Desktop
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439.9px) {
   .customized-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include constants.container-without-padding(flex, column, space-around);
 
     .second-part {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      align-content: center;
-      border-top: 0.1rem solid constants.$font-primary-color;
+      @include constants.second-part(
+        flex,
+        row-reverse,
+        space-around,
+        center,
+        0.1rem solid constants.$font-primary-color,
+        4.7rem 4% 11.1rem 4%
+      );
+
+      .legal-info,
+      #rights {
+        width: 50%;
+      }
+      .legal-info {
+        @include constants.legal-info(flex, row, flex-end, 3.8rem, center);
+      }
+      #rights {
+        text-align: left;
+      }
     }
 
     a {
@@ -76,30 +73,34 @@
     .divisor-line {
       display: none;
     }
-
-    p {
-      margin: 0;
-      text-align: center;
-      align-self: center;
-    }
   }
 }
 
-// Desktop max 4k
-@media (min-width: 1441px) {
+// Desktop L
+@media (min-width: 1440px) {
   .customized-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
+    @include constants.container-without-padding(flex, column, space-around);
 
     .second-part {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      align-content: center;
-      border-top: 0.1rem solid constants.$font-primary-color;
+      @include constants.second-part(
+        flex,
+        row-reverse,
+        space-around,
+        center,
+        0.1rem solid constants.$font-primary-color,
+        4.7rem 5% 11.1rem 5%
+      );
+
+      .legal-info,
+      #rights {
+        width: 50%;
+      }
+      .legal-info {
+        @include constants.legal-info(flex, row, flex-end, 3.8rem, center);
+      }
+      #rights {
+        text-align: left;
+      }
     }
 
     a {

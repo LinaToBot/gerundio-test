@@ -1,19 +1,13 @@
-.mobile-paragraphs {
-  p {
-    letter-spacing: 0;
-  }
+@use "../../utils/constants" as constants;
 
+.mobile-paragraphs {
   p:first-child {
-    font-weight: 600;
-    font-size: 2.8rem;
-    line-height: 4.2rem;
+    @include constants.title-styles(600, 2.8rem, 4.2rem);
     margin: 5.2rem 0 0 0;
   }
 
   p:nth-child(2) {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    @include constants.title-styles(300, 1.8rem, 2.7rem);
     margin: 0;
   }
 }
@@ -34,21 +28,13 @@
 }
 
 .desktop-paragraphs {
-  p {
-    letter-spacing: 0;
-  }
-
   p:first-child {
-    font-weight: 600;
-    font-size: 3.8rem;
-    line-height: 5.7rem;
+    @include constants.title-styles(600, 3.8rem, 5.7rem);
     margin: 0;
   }
 
   p:nth-child(2) {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    @include constants.title-styles(300, 1.8rem, 2.7rem);
     margin: 0;
   }
 }
@@ -86,10 +72,12 @@
   }
 
   .instructions-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 8.3rem 1rem 0 1rem;
+    @include constants.container-styles(
+      flex,
+      row,
+      space-around,
+      8.3rem 1rem 0 1rem
+    );
   }
 
   .desktop-paragraphs {
@@ -109,10 +97,12 @@
     width: 61.7rem;
   }
   .instructions-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 8.3rem 1rem 0 1rem;
+    @include constants.container-styles(
+      flex,
+      row,
+      space-around,
+      8.3rem 1rem 0 1rem
+    );
   }
 
   .desktop-paragraphs {

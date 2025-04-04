@@ -1,30 +1,23 @@
 @use "../../utils/constants" as constant;
 
 .card {
-  display: flex;
-  flex-direction: column;
+  @include constant.container-styles(flex, column, unset, 3.6rem 3.2rem);
   background-color: constant.$card-bg-color;
   border: 0.2rem solid constant.$border-color;
   border-radius: 1rem;
-  padding: 3.6rem 3.2rem;
   transition: box-shadow 0.3s ease-in-out;
 
   p {
-    letter-spacing: 0;
     text-align: left;
   }
 
   p:nth-child(2) {
-    font-weight: 600;
-    font-size: 2.1rem;
-    line-height: 3.3rem;
+    @include constant.title-styles(600, 2.1rem, 3.3rem);
     color: constant.$primary-color;
   }
 
   p:nth-child(3) {
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    @include constant.title-styles(300, 1.8rem, 2.7rem);
   }
 
   &:hover {

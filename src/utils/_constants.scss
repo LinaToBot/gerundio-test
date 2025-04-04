@@ -8,3 +8,57 @@ $wildcard-color: #fafafa;
 
 $card-bg-color: #ffffff;
 $border-color: #dcdcdc;
+
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+@mixin title-styles($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: 0;
+}
+
+@mixin p-styles($text-align, $width) {
+  text-align: left;
+  width: 50rem;
+}
+
+@mixin container-styles($display, $f-direction, $j-content, $padding) {
+  display: $display;
+  flex-direction: $f-direction;
+  justify-content: $j-content;
+  padding: $padding;
+}
+
+@mixin container-without-padding($display, $f-direction, $j-content) {
+  display: $display;
+  flex-direction: $f-direction;
+  justify-content: $j-content;
+}
+
+@mixin second-part(
+  $display,
+  $f-direction,
+  $j-content,
+  $a-content,
+  $b-top,
+  $padding
+) {
+  display: $display;
+  flex-direction: $f-direction;
+  justify-content: $j-content;
+  align-content: $a-content;
+  border-top: $b-top;
+  padding: $padding;
+}
+
+@mixin legal-info($display, $f-direction, $j-content, $gap, $a-items) {
+  display: $display;
+  flex-direction: $f-direction;
+  justify-content: $j-content;
+  gap: $gap;
+  align-items: $a-items;
+}

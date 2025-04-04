@@ -6,14 +6,11 @@
 }
 
 p {
-  letter-spacing: 0;
   margin: 0;
 }
 
 .title {
-  font-weight: 600;
-  font-size: 2.8rem;
-  line-height: 4.2rem;
+  @include constants.title-styles(600, 2.8rem, 4.2rem);
   text-align: left;
 
   #title-span {
@@ -26,9 +23,7 @@ p {
   justify-content: end;
   p {
     width: 33.3rem;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    @include constants.title-styles(300, 1.6rem, 2.4rem);
     text-align: left;
   }
 }

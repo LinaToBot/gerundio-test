@@ -71,10 +71,7 @@
     width: 8.5rem;
     height: auto;
     min-height: 2.9rem;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0;
+    @include constants.title-styles(600, 1rem, 1.5rem);
     align-self: center;
   }
 
@@ -127,10 +124,7 @@
     .login-btn {
       font-family: "Poppins";
       background: transparent;
-      font-weight: 600;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      letter-spacing: 0;
+      @include constants.title-styles(600, 1.6rem, 2.4rem);
       color: constants.$font-primary-color;
       border-radius: 0;
       width: auto;

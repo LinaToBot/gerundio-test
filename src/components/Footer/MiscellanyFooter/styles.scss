@@ -1,40 +1,27 @@
 @use "../../../utils/constants" as constants;
 
-.miscellany-container {
-  p {
-    letter-spacing: 0;
-  }
-}
-
 .information {
   p:first-child {
+    @include constants.title-styles(600, 3.8rem, 5.7rem);
     margin: 5.6rem 0 0 0;
-    font-weight: 600;
-    font-size: 3.8rem;
-    line-height: 5.7rem;
     color: constants.$primary-color;
   }
 
   p:nth-child(2) {
     margin: 2.5rem 0.5rem 13.6rem 0.5rem;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    @include constants.title-styles(300, 1.8rem, 2.7rem);
   }
 }
 
 .links {
   #links-p {
+    @include constants.title-styles(600, 2.4rem, 3.6rem);
     margin: 0;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
     color: constants.$primary-color;
   }
 
   .links-list {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     flex-wrap: wrap;
     align-items: center;
     gap: 1.8rem;
@@ -46,32 +33,26 @@
     }
     .first-list,
     .second-list {
-      display: flex;
-      flex-direction: column;
+      @include constants.container-styles(flex, column, unset, unset);
       gap: 1.8rem;
     }
   }
 }
 
 .newsletter {
-  display: flex;
-  flex-direction: column;
+  @include constants.container-styles(flex, column, unset, unset);
 
   #newsletter-title {
+    @include constants.title-styles(600, 2.4rem, 3.6rem);
     margin: 0;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
     color: constants.$primary-color;
   }
 
   #newsletter-p {
+    @include constants.title-styles(300, 1.2rem, 1.8rem);
     align-self: center;
     width: 28rem;
     margin: 5.4rem 0 1.9rem 0;
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
   }
 
   .email-input {
@@ -80,10 +61,13 @@
     height: 3.8rem;
     border: 0.1px solid constants.$font-primary-color;
     border-radius: 1rem;
-    display: flex;
-    justify-content: space-between;
+    @include constants.container-styles(
+      flex,
+      unset,
+      space-between,
+      0 0.4rem 0 1.4rem
+    );
     align-items: center;
-    padding: 0 0.4rem 0 1.4rem;
 
     input {
       border: none;
@@ -92,23 +76,21 @@
     }
 
     button {
+      @include constants.title-styles(500, 1.2rem, 1.8rem);
       width: 9.3rem;
       height: 3rem;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      letter-spacing: 0;
       color: constants.$wildcard-color;
       background-color: constants.$primary-color;
       border-radius: 0.5rem;
+      &:hover {
+        background-color: constants.$secondary-color;
+      }
     }
   }
 }
 
 .social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include constants.container-styles(flex, row, center, unset);
   gap: 6rem;
   margin: 3.6rem 0 9rem 0;
   img {
@@ -117,26 +99,20 @@
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  @include constants.container-styles(flex, column, center, unset);
   align-items: start;
-  justify-content: center;
   gap: 1.7rem;
   width: 28rem;
   margin: 0 auto 13.4rem auto;
 
   div {
-    display: flex;
-    flex-direction: row;
+    @include constants.container-styles(flex, row, unset, unset);
     align-items: center;
     gap: 1rem;
 
     p {
+      @include constants.title-styles(400, 1.8rem, 2.7rem);
       margin: 0;
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      letter-spacing: 0;
     }
   }
 }
@@ -162,8 +138,7 @@
 
 @media (min-width: 768px) {
   .information {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     align-items: center;
 
     p:nth-child(2) {
@@ -175,16 +150,12 @@
 // Desktop
 @media (min-width: 1024px) and (max-width: 1439.9px) {
   .miscellany-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0rem 1rem;
+    @include constants.container-styles(flex, row, space-around, 0rem 1rem);
     margin-top: 7.8rem;
   }
 
   .information {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     align-items: start;
 
     p:first-child {
@@ -203,10 +174,8 @@
     }
 
     .contact {
-      display: flex;
-      flex-direction: column;
+      @include constants.container-styles(flex, column, center, unset);
       align-items: start;
-      justify-content: center;
       gap: 1.7rem;
       width: 32rem;
       margin: 0;
@@ -214,11 +183,8 @@
       div {
         gap: 3rem;
         p {
+          @include constants.title-styles(400, 1.8rem, 2.7rem);
           margin: 0;
-          font-weight: 400;
-          font-size: 1.8rem;
-          line-height: 2.7rem;
-          letter-spacing: 0;
         }
       }
 
@@ -230,8 +196,7 @@
   }
 
   .links {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
 
     #links-p {
       text-align: start;
@@ -241,21 +206,15 @@
       width: 15rem;
       height: auto;
       gap: 2rem;
-      font-weight: 300;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      display: flex;
-      flex-direction: column;
+      @include constants.title-styles(300, 1.8rem, 2.7rem);
+      @include constants.container-styles(flex, column, unset, unset);
       align-items: center;
       margin: 4.5rem 0 0 0;
 
       a {
+        @include constants.title-styles(300, 1.8rem, 2.7rem);
         margin: 0;
         text-align: center;
-        font-weight: 300;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        letter-spacing: 0;
       }
 
       .first-list {
@@ -268,8 +227,7 @@
 
       .first-list,
       .second-list {
-        display: flex;
-        flex-direction: column;
+        @include constants.container-styles(flex, column, unset, unset);
         align-items: center;
         gap: 2rem;
       }
@@ -295,18 +253,12 @@
 // Desktop L
 @media (min-width: 1440px) {
   .miscellany-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0rem 2rem;
+    @include constants.container-styles(flex, row, space-around, 0rem 2rem);
     margin-top: 7.8rem;
-    // width: 142rem;
-    // width: 95%;
   }
 
   .information {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     align-items: start;
 
     p:first-child {
@@ -325,10 +277,8 @@
     }
 
     .contact {
-      display: flex;
-      flex-direction: column;
+      @include constants.container-styles(flex, column, center, unset);
       align-items: start;
-      justify-content: center;
       gap: 1.7rem;
       width: 32rem;
       margin: 0;
@@ -336,11 +286,8 @@
       div {
         gap: 3rem;
         p {
+          @include constants.title-styles(400, 1.8rem, 2.7rem);
           margin: 0;
-          font-weight: 400;
-          font-size: 1.8rem;
-          line-height: 2.7rem;
-          letter-spacing: 0;
         }
       }
 
@@ -357,23 +304,17 @@
     }
 
     .links-list {
+      @include constants.title-styles(300, 1.8rem, 2.7rem);
       width: 42rem;
       height: auto;
-      font-weight: 300;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      display: flex;
-      flex-direction: row;
+      @include constants.container-styles(flex, row, unset, unset);
       align-items: center;
       margin: 4.5rem 0 0 0;
 
       a {
+        @include constants.title-styles(300, 1.8rem, 2.7rem);
         margin: 0;
         text-align: center;
-        font-weight: 300;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        letter-spacing: 0;
       }
 
       .first-list {
@@ -386,9 +327,8 @@
 
       .first-list,
       .second-list {
-        display: flex;
+        @include constants.container-styles(flex, row, unset, unset);
         align-items: start;
-        flex-direction: row;
       }
     }
   }
@@ -412,17 +352,13 @@
 // Desktop max 4k
 @media (min-width: 1441px) {
   .miscellany-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0rem 0rem;
+    @include constants.container-styles(flex, row, space-evenly, 0);
     margin-top: 7.8rem;
     width: 100%;
   }
 
   .information {
-    display: flex;
-    flex-direction: column;
+    @include constants.container-styles(flex, column, unset, unset);
     align-items: start;
 
     p:first-child {
@@ -441,10 +377,8 @@
     }
 
     .contact {
-      display: flex;
-      flex-direction: column;
+      @include constants.container-styles(flex, column, center, unset);
       align-items: start;
-      justify-content: center;
       gap: 1.7rem;
       width: 32rem;
       margin: 0;
@@ -452,11 +386,8 @@
       div {
         gap: 3rem;
         p {
+          @include constants.title-styles(400, 1.8rem, 2.7rem);
           margin: 0;
-          font-weight: 400;
-          font-size: 1.8rem;
-          line-height: 2.7rem;
-          letter-spacing: 0;
         }
       }
 
@@ -473,23 +404,17 @@
     }
 
     .links-list {
+      @include constants.title-styles(300, 1.8rem, 2.7rem);
       width: 42rem;
       height: auto;
-      font-weight: 300;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      display: flex;
-      flex-direction: row;
+      @include constants.container-styles(flex, row, unset, unset);
       align-items: center;
       margin: 4.5rem 0 0 0;
 
       a {
+        @include constants.title-styles(300, 1.8rem, 2.7rem);
         margin: 0;
         text-align: center;
-        font-weight: 300;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        letter-spacing: 0;
       }
 
       .first-list {
@@ -502,9 +427,8 @@
 
       .first-list,
       .second-list {
-        display: flex;
+        @include constants.container-styles(flex, row, unset, unset);
         align-items: start;
-        flex-direction: row;
       }
     }
   }
