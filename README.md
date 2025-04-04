@@ -69,7 +69,7 @@ First, make sure you have Node.js v18.18.0 and npm v9.8.1 installed.
 If you don't have them, you can install them by following the instructions at:
 👉 https://nodejs.org/en/download
 
-Then, clone this repository using git clone followed by the repository URL:
+Then, clone this repository using git clone followed by the repository URL in your terminal:
 
 ```markdown
 git clone <repository-url>
