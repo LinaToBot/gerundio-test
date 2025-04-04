@@ -1,56 +1,97 @@
-# React + TypeScript + Vite
+# Gereundio Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Landing Page project for the Frontend position at Gerundio, optimized from mobile to desktop.
 
-This project used vite because is faster than Webpack in build and develop times considering a Landing page creation.
+The architecture used in this project is Component-based Architecture, which enables component reusability, easier maintainability with small and modular components, and scalability. The latter allows for adding new components without affecting the project structure.
 
-Currently, two official plugins are available:
+The use of Hooks is to encapsulate the logic, allowing for reusability throughout the app and easier scalability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Finally, the use of SCSS enables the use of variables, mixins, and nesting, making styles more scalable and maintainable.
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+About this project, I decided to use the following technologies:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- Node v18.18.0: It's a JavaScript runtime environment used to execute JavaScript code and install dependencies.
+
+- npm v9.8.1: It's the Node package manager used to install libraries, manage dependencies, and run scripts.
+
+- React ^19.0.0: I chose React because this project is a simple Landing Page that doesn't require route management. React's component-based architecture is ideal for this purpose.
+
+- TypeScript ~5.7.2: Its static typing helps improve code reliability by enforcing data types in components, functions, hooks, etc.
+
+- SASS (SCSS) ^1.86.1: I chose SCSS because it allows the use of variables, nested selectors, and inheritance. I prefer the SCSS syntax over SASS because it's more similar to regular CSS.
+
+- ESLint ^9.21.0: To maintain clean code and analyze it according to ECMAScript standards.
+
+- Vite ^6.2.0: It's a modern build tool that helps create a more efficient frontend app with faster setup and development experience.
+
+## Project Structure
+
+```markdown
+gerundio-test/ → App root folder
+├── node_modules/ → Packages installed with npm
+├── publics/ → Static assets like images
+├── src/ → Source code
+│ ├── assets/ → Icons and media
+│ ├── components/ → Reusable React components
+│ ├── hooks/ → Custom React hooks
+│ ├── utils/ → Utility styles and data constants
+│ ├── App.scss → Styles specific to the App component
+│ ├── App.tsx → Main root component of the app
+│ ├── index.scss → Global styles (resets, base)
+│ ├── main.tsx → Entry point that mounts the React app
+│ └── vite-env.d.ts → Vite-specific TypeScript types
+├── .gitignore → Git versioning ignore list
+├── eslint.config.js → Linting rules for code quality
+├── index.html → Base HTML template used by Vite
+├── package-lock.json → Auto-generated lockfile for exact dependency versions
+├── package.json → Project metadata and npm dependencies
+├── README.md → Project documentation
+├── tsconfig.app.json → TypeScript config for the app only
+├── tsconfig.json → Root TypeScript config
+├── tsconfig.node.json → TypeScript config for Node scripts
+└── vite.config.ts → Vite configuration (plugins, server, etc.)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Commits Structure
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+```markdown
+// structure
+<type>(<scope>): <message>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+// example
+feat(styles): desktop styles added
 ```
+
+How to run the project
+First, make sure you have Node.js v18.18.0 and npm v9.8.1 installed.
+If you don't have them, you can install them by following the instructions at:
+👉 https://nodejs.org/en/download
+
+Then, clone this repository using git clone followed by the repository URL:
+
+```markdown
+git clone <repository-url>
+```
+
+Once the repository is cloned, navigate to the project folder and install the dependencies with:
+
+```markdown
+cd gerundio-test
+```
+
+```markdown
+npm install
+```
+
+Now run the development server with:
+
+```markdown
+npm run dev
+```
+
+The project will now be running on:
+👉 http://localhost:5173
+
+You can open that URL in your browser to see the app.
